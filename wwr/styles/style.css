@@ -7,6 +7,8 @@
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .home-title {
@@ -26,6 +28,8 @@ h4 {
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -42,6 +46,11 @@ nav a:hover {
 
 .button-box {
     text-align: center;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 #hero-msg h1 {
@@ -76,6 +85,8 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 150px auto;
     background-color: #FF9147;
 }
 
