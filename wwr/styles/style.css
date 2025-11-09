@@ -98,8 +98,11 @@ main section img {
     box-sizing: border-box;
 }
 
-#backgrounds {
+#background {
+    background-color: rgb(111, 115, 100);
+    color: black;
     height: 725px;
+    width: 100%;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -118,7 +121,7 @@ header {
 }
 
 .book, .join {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(200, 200, 200);
     color: black;
     text-decoration: none;
     font-size: 18px;
@@ -127,9 +130,9 @@ header {
     border-radius: 5px;
 }
 
-.book:hover .join:hover {
-    background-color: #339CFF;
-    color: white;
+.book:hover, .join:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 .msg {
@@ -154,7 +157,7 @@ header {
 }
 
 footer {
-    background-color: #6f7364;
+    background-color: #bdbdbd;
     color: black;
     padding: 25px 50px;
     margin-top: 200px;
