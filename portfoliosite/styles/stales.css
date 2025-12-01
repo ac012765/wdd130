@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #F4F1EC;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #7A8E60;
+    border-bottom: 10px solid #C77966;
+    border-left: 10px solid #C77966;
+    border-right: 10px solid #C77966;
+}
+
+#logo-link {
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+    background: #4b5a33;
+}
+
+#logo-link img {
+    width: 100px;
+    height: 100px;
+    background: rgb(20, 19, 19, 0.9);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.top-nav a {
+    color: #1f1f1f;
+    background: #6C7E55;
+    text-decoration: none;
+    width: 200px;
+    margin: 15px;
+    padding: 35px;
+    font-size: 25px;
+}
+
+.top-nav a:hover {
+    background-color: #AFC6A1;
+    color: black;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 600px 1fr 1fr;
+    place-items: cent;
+    max-width: 1600px;
+}
+
+#intro-box {
+    grid-column: 3/4;
+    padding-top: 20px;
+}
+
+#intro p {
+    grid-column: 3/4;
+    text-align: center;
+    background: #AFC6A1;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    font-family: Spectral, Helvetica, sans-serif;
+    z-index: 0;
+}
+
+.divider {
+    background: #C77966;
+    grid-column: 3/4;
+    width: 1400px;
+    height: 20px;
+    justify-self: center;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: start;
+    justify-items: center;
+    row-gap: 3rem;
+}
+
+.web-design-card {
+    margin: 100px 0;
+    grid-column: 3/5;
+    text-align: center;
+    background: #AFC6A1;
+    padding: 30px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.card-image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.programming-card {
+    margin: 100px 0;
+    grid-column: 7/9;
+    text-align: center;
+    background: #AFC6A1;
+    padding: 30px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.card-image {
+    width: 250px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+.skills {
+    color: black;
+    font-size: 35px;
+    background: #667a46;
+    padding: 20px;
+}
+
+footer {
+    background-color: #7A8E60;
+    color: black;
+    border-top: 10px solid #C77966;
+    border-left: 10px solid #C77966;
+    border-right: 10px solid #C77966;
+}
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bottom-nav {
+    grid-column: 2/3;
+    padding: 5px;
+    text-align: center;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.bottom-contact {
+    grid-column: 5/7;
+    padding: 5px;
+}
+
+.bottom-contact h3 {
+    text-decoration: underline;
+}
+
+.bottom-contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom-contact a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom-nav h3{
+    text-decoration: underline;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
+
+.bottom-nav li {
+    text-decoration: none;
+    background: #6C7E55;
+    margin: 5px;
+}
+
+.bottom-nav li:hover {
+    text-decoration: none;
+    background: #AFC6A1;
+}
+
+.bottom-nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.social {
+    grid-column: 9/10;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+
+.social img {
+    width: 75px;
+    height: 75px;
+}
