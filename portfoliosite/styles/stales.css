@@ -245,11 +245,12 @@ footer {
 }
 
 .utah-box {
-    grid-column: 5/6;
+    grid-column: 4/6;
     grid-row: 2/3;
     width: 485px;
     height: 485px;
     margin: 30px;
+    margin-right: 150px;
     justify-self: center;
     align-self: center;
     border: 5px solid black;
@@ -268,12 +269,13 @@ footer {
 }
 
 .proficiencies-card {
-    grid-column: 5/6;
+    grid-column: 4/6;
     grid-row: 3/4;
     text-align: center;
     font-size: 22px;
     padding: 50px;
     margin: 30px;
+    margin-right: 150px;
     background: #AFC6A1;
     border: 5px solid #667a46;
     border-radius: 5px;
