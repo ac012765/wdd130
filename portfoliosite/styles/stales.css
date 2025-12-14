@@ -42,7 +42,8 @@ header {
     background: #6C7E55;
     text-decoration: none;
     width: 200px;
-    margin: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
     padding: 15px;
     font-size: 25px;
     border-radius: 25px;
@@ -53,10 +54,25 @@ header {
     color: black;
 }
 
+.about-me-nav {
+    margin-left: -50px;
+    margin-right: 150px;
+}
+
+.home-nav {
+    margin-left: -100px;
+    margin-right: -250px
+}
+
+.projects-nav {
+    margin-right: 50px;
+    margin-left: -450px;
+}
+
 #intro {
     display: grid;
     grid-template-columns: 1fr 1fr 600px 1fr 1fr;
-    place-items: cent;
+    place-items: center;
     max-width: 1600px;
 }
 
@@ -86,6 +102,7 @@ header {
 
 .divider {
     background: #C77966;
+    border: 2px solid #b46e5c;
     grid-column: 3/4;
     width: 1400px;
     height: 20px;
@@ -160,27 +177,40 @@ footer {
 
 .bottom-nav {
     grid-column: 2/3;
+    justify-self: center;
     padding: 5px;
     text-align: center;
     font-family: "Zalando Sans", Helvetica, Georgia;
 }
 
+.bottom-nav h3 {
+    margin-right: -25px;
+}
+
 .bottom-contact {
-    grid-column: 5/7;
+    grid-column: 5/8;
+    justify-self: center;
     padding: 5px;
+    margin-left: -120px;
+    text-align: center;
 }
 
 .bottom-contact h3 {
     text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.bottom-contact p {
+    margin-bottom: -10px;
 }
 
 .bottom-contact a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
 .bottom-contact a:visited {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -242,6 +272,12 @@ footer {
 
 .aboutme-card h2 {
     text-decoration: underline;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.aboutme-card p {
+    text-align: justify;
+    font-family: Spectral, Helvetica, sans-serif;
 }
 
 .utah-box {
@@ -283,6 +319,12 @@ footer {
 
 .proficiencies-card h2 {
     text-decoration: underline;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.proficiencies-card p {
+    text-align: justify;
+    font-family: Spectral, Helvetica, sans-serif;
 }
 
 .background {
@@ -302,8 +344,10 @@ footer {
     grid-row: 1/2;
     text-align: center;
     font-size: 50px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
     margin-bottom: 150px;
-    background: #667a46;
+    margin-top: -90px;
+    background: #768c53;
     width: 100%;
     border: 2px solid black;
 }
@@ -338,6 +382,7 @@ footer {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: Spectral, Helvetica, sans-serif;
 }
 
 .value-img {
@@ -386,6 +431,7 @@ footer {
   padding: 16px 32px;
   border-radius: 90px;
   white-space: nowrap;
+  font-family: "Zalando Sans", Helvetica, Georgia;
 }
 
 .alt-over-text {
@@ -394,10 +440,207 @@ footer {
   font-size: 22px;
   padding: 25px 32px;
   border-radius: 90px;
+  font-family: "Zalando Sans", Helvetica, Georgia;
 }
 
 .img-backing {
     background: #ffffff;
     height: 260px;
     margin-bottom: 20px;
+}
+
+/* Projects page css */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px 1fr 300px 1fr 1fr;
+}
+
+.programmer-card {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin: 100px 0;
+    text-align: center;
+    background: #AFC6A1;
+    padding: 80px;
+    border-radius: 10px;
+    border: 5px solid #667a46;
+}
+
+.designer-card {
+    grid-column: 5/7;
+    grid-row: 1/2;
+    margin: 100px 0;
+    text-align: center;
+    background: #AFC6A1;
+    padding: 80px;
+    border-radius: 10px;
+    border: 5px solid #667a46;
+}
+
+.programmer-card img {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.designer-card img {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.programmer-card h3 {
+    background: #768c53;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+    padding: 20px;
+}
+
+.designer-card h3 {
+    background: #768c53;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+    padding: 20px;
+}
+
+.programmer-card p {
+    background: #C77966;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: justify;
+    font-family: Spectral, Helvetica, sans-serif;
+}
+
+.designer-card p {
+    background: #C77966;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: justify;
+    font-family: Spectral, Helvetica, sans-serif;
+}
+
+/* project grid */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 200px;
+}
+
+.word-game-card {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+}
+
+.rafting-site-card {
+    grid-column: 4/6;
+    grid-row: 3/4;
+    justify-self: center;
+    text-align: center;
+}
+
+.text-adventure-card {
+    grid-column: 7/9;
+    grid-row: 3/4;
+    justify-self: center;
+    text-align: center;
+}
+
+.word-game-card h2 {
+    font-size: 20px;
+    background: #C77966;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-decoration: underline;
+    margin-bottom: 65px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.rafting-site-card h2 {
+    font-size: 20px;
+    white-space: nowrap;
+    background: #C77966;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 65px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.rafting-site-card a {
+    color: #000000;
+}
+
+.text-adventure-card h2 {
+    font-size: 20px;
+    white-space: nowrap;
+    background: #C77966;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-decoration: underline;
+    margin-bottom: 65px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
+}
+
+.word-game-card p {
+    text-align: justify;
+    background: #7A8E60;
+    font-size: 20px;
+    border: 3px solid #6C7E55;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 45px;
+    margin-bottom: 100px;
+    font-family: Spectral, Helvetica, sans-serif;
+}
+
+.rafting-site-card p {
+    text-align: justify;
+    background: #7A8E60;
+    font-size: 20px;
+    border: 3px solid #6C7E55;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 45px;
+    font-family: Spectral, Helvetica, sans-serif;
+}
+
+.text-adventure-card p {
+    text-align: justify;
+    background: #7A8E60;
+    font-size: 20px;
+    border: 3px solid #6C7E55;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 75px;
+    font-family: Spectral, Helvetica, sans-serif;
+}
+
+#projects-title {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 50px;
+    background: #768c53;
+    width: 100%;
+    border: 3px solid black;
+    margin-bottom: 150px;
+    margin-top: -90px;
+    font-family: "Zalando Sans", Helvetica, Georgia;
 }
