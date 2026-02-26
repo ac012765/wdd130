@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    --color-primary: #1E3A8A;         /* deep blue */
+    --color-accent: #3B82F6;          /* brighter blue */
+    --color-dark: #1F2937;            /* dark grey / almost black */
+    --color-medium-grey: #7b8591;     /* mid grey */
+    --color-light-bg: #F3F4F6;        /* light grey page background */
+    --color-white: #FFFFFF;           /* white */
+}
+
+body {
+    background-color: lightgrey;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    background: #F4F1EC;
+    background: lightgrey;
 }
 
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: #7A8E60;
-    border-bottom: 10px solid #C77966;
-    border-left: 10px solid #C77966;
-    border-right: 10px solid #C77966;
+    background-color: var(--color-medium-grey);
+    border-bottom: 10px solid var(--color-dark);
+    border-left: 10px solid var(--color-dark);
+    border-right: 10px solid var(--color-dark);
+    border-top: 10px solid var(--color-dark);
 }
 
 #logo-link {
-    padding: 5px;
+    padding: 5px 30px 5px 30px;
     justify-self: center;
     align-self: center;
-    background: #4b5a33;
-    border-radius: 5px;
+    background: var(--color-dark);
 }
 
 #logo-link img {
@@ -39,7 +52,7 @@ header {
 
 .top-nav a {
     color: #1f1f1f;
-    background: #6C7E55;
+    background: white;
     text-decoration: none;
     width: 200px;
     margin-bottom: 15px;
@@ -50,7 +63,7 @@ header {
 }
 
 .top-nav a:hover {
-    background-color: #AFC6A1;
+    background-color: var(--color-light-bg);
     color: black;
 }
 
@@ -83,26 +96,26 @@ header {
 
 #intro-box img {
     border-radius: 20px;
-    border: 5px solid rgb(243, 243, 243);
+    border: 5px solid var(--color-dark);
 }
 
 #intro p {
     grid-column: 3/4;
     text-align: center;
-    background: #AFC6A1;
+    background: var(--color-light-bg);
     color: black;
     font-size: 20px;
     width: 100%;
     padding: 20px;
     font-family: Spectral, Helvetica, sans-serif;
     z-index: 0;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
     border-radius: 5px;
 }
 
 .divider {
-    background: #C77966;
-    border: 2px solid #b46e5c;
+    background: var(--color-dark);
+    border: 2px solid var(--color-dark);
     grid-column: 3/4;
     width: 1400px;
     height: 20px;
@@ -123,11 +136,11 @@ header {
     margin: 100px 0;
     grid-column: 3/5;
     text-align: center;
-    background: #AFC6A1;
+    background: var(--color-light-bg);
     padding: 30px;
     font-family: "Zalando Sans", Helvetica, Georgia;
     border-radius: 10px;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
 }
 
 .card-image:hover {
@@ -139,35 +152,35 @@ header {
     margin: 100px 0;
     grid-column: 7/9;
     text-align: center;
-    background: #AFC6A1;
+    background: var(--color-light-bg);
     padding: 30px;
     font-family: "Zalando Sans", Helvetica, Georgia;
     border-radius: 10px;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
 }
 
 .card-image {
     width: 250px;
     height: 300px;
     transition: transform 0.5s ease;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
     border-radius: 5px;
 }
 
 .skills {
-    color: black;
+    color: #ffffffe6;
     font-size: 35px;
-    background: #667a46;
+    background: var(--color-dark);
     padding: 20px;
     border-radius: 5px;
 }
 
 footer {
-    background-color: #7A8E60;
+    background-color: var(--color-medium-grey);
     color: black;
-    border-top: 10px solid #C77966;
-    border-left: 10px solid #C77966;
-    border-right: 10px solid #C77966;
+    border-top: 10px solid var(--color-dark);
+    border-left: 10px solid var(--color-dark);
+    border-right: 10px solid var(--color-dark);
 }
 
 .bottom-container {
@@ -185,14 +198,49 @@ footer {
 
 .bottom-nav h3 {
     margin-right: -25px;
+    text-decoration: underline;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
+
+.bottom-nav li {
+    text-decoration: none;
+    background: white;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.bottom-nav li:hover {
+    text-decoration: none;
+    background: var(--color-dark);
+    color: white;
+}
+
+.bottom-nav li:hover a {
+    color: white;
+}
+
+.bottom-nav a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .bottom-contact {
     grid-column: 5/8;
     justify-self: center;
-    padding: 5px;
+    padding: 0px 10px;
     margin-left: -120px;
     text-align: center;
+    background: var(--color-white);
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .bottom-contact h3 {
@@ -211,31 +259,6 @@ footer {
 
 .bottom-contact a:visited {
     text-decoration: underline;
-    color: black;
-}
-
-.bottom-nav h3{
-    text-decoration: underline;
-}
-
-.bottom-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-.bottom-nav li {
-    text-decoration: none;
-    background: #6C7E55;
-    margin: 5px;
-}
-
-.bottom-nav li:hover {
-    text-decoration: none;
-    background: #AFC6A1;
-}
-
-.bottom-nav a:visited {
-    text-decoration: none;
     color: black;
 }
 
@@ -265,8 +288,8 @@ footer {
     font-size: 20px;
     padding: 30px;
     margin: 30px;
-    background: #AFC6A1;
-    border: 5px solid #667a46;
+    background: var(--color-light-bg);
+    border: 5px solid var(--color-dark);
     border-radius: 5px;
 }
 
@@ -312,8 +335,8 @@ footer {
     padding: 50px;
     margin: 30px;
     margin-right: 150px;
-    background: #AFC6A1;
-    border: 5px solid #667a46;
+    background: var(--color-light-bg);
+    border: 5px solid var(--color-dark);
     border-radius: 5px;
 }
 
@@ -328,7 +351,7 @@ footer {
 }
 
 .background {
-    background: #C77966;
+    background: var(--color-dark);
     margin: 40px;
     padding-bottom: 15px;
 }
@@ -347,7 +370,7 @@ footer {
     font-family: "Zalando Sans", Helvetica, Georgia;
     margin-bottom: 150px;
     margin-top: -90px;
-    background: #768c53;
+    background: var(--color-medium-grey);
     width: 100%;
     border: 2px solid black;
 }
@@ -377,8 +400,8 @@ footer {
 }
 
 .values-msg {
-    background: #C77966;
-    border: 5px solid #b46e5c;
+    background: var(--color-white);
+    border: 5px solid var(--color-dark);
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -461,10 +484,10 @@ footer {
     grid-row: 1/2;
     margin: 100px 0;
     text-align: center;
-    background: #AFC6A1;
-    padding: 80px;
+    background: var(--color-light-bg);
+    padding: 40px;
     border-radius: 10px;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
 }
 
 .designer-card {
@@ -472,10 +495,10 @@ footer {
     grid-row: 1/2;
     margin: 100px 0;
     text-align: center;
-    background: #AFC6A1;
-    padding: 80px;
+    background: var(--color-light-bg);
+    padding: 40px;
     border-radius: 10px;
-    border: 5px solid #667a46;
+    border: 5px solid var(--color-dark);
 }
 
 .programmer-card img {
@@ -497,7 +520,7 @@ footer {
 }
 
 .programmer-card h3 {
-    background: #768c53;
+    background: var(--color-medium-grey);
     border-radius: 5px;
     border: 2px solid black;
     font-family: "Zalando Sans", Helvetica, Georgia;
@@ -505,7 +528,7 @@ footer {
 }
 
 .designer-card h3 {
-    background: #768c53;
+    background: var(--color-medium-grey);
     border-radius: 5px;
     border: 2px solid black;
     font-family: "Zalando Sans", Helvetica, Georgia;
@@ -513,18 +536,14 @@ footer {
 }
 
 .programmer-card p {
-    background: #C77966;
-    border-radius: 5px;
-    border: 2px solid black;
+    font-size: 18px;
     padding: 20px;
     text-align: justify;
     font-family: Spectral, Helvetica, sans-serif;
 }
 
 .designer-card p {
-    background: #C77966;
-    border-radius: 5px;
-    border: 2px solid black;
+    font-size: 18px;
     padding: 20px;
     text-align: justify;
     font-family: Spectral, Helvetica, sans-serif;
@@ -561,8 +580,9 @@ footer {
 }
 
 .word-game-card h2 {
+    color: white;
     font-size: 20px;
-    background: #C77966;
+    background: var(--color-dark);
     border: 2px solid black;
     border-radius: 5px;
     padding: 20px;
@@ -574,7 +594,7 @@ footer {
 .rafting-site-card h2 {
     font-size: 20px;
     white-space: nowrap;
-    background: #C77966;
+    background: var(--color-dark);
     border: 2px solid black;
     border-radius: 5px;
     padding: 20px;
@@ -583,13 +603,14 @@ footer {
 }
 
 .rafting-site-card a {
-    color: #000000;
+    color: white;
 }
 
 .text-adventure-card h2 {
+    color: white;
     font-size: 20px;
     white-space: nowrap;
-    background: #C77966;
+    background: var(--color-dark);
     border: 2px solid black;
     border-radius: 5px;
     padding: 20px;
@@ -600,9 +621,9 @@ footer {
 
 .word-game-card p {
     text-align: center;
-    background: #7A8E60;
+    background: var(--color-white);
     font-size: 20px;
-    border: 3px solid #6C7E55;
+    border: 3px solid var(--color-dark);
     border-radius: 5px;
     padding: 30px;
     padding-bottom: 45px;
@@ -612,9 +633,9 @@ footer {
 
 .rafting-site-card p {
     text-align: center;
-    background: #7A8E60;
+    background: var(--color-white);
     font-size: 20px;
-    border: 3px solid #6C7E55;
+    border: 3px solid var(--color-dark);
     border-radius: 5px;
     padding: 30px;
     padding-bottom: 45px;
@@ -623,9 +644,9 @@ footer {
 
 .text-adventure-card p {
     text-align: center;
-    background: #7A8E60;
+    background: var(--color-white);
     font-size: 20px;
-    border: 3px solid #6C7E55;
+    border: 3px solid var(--color-dark);
     border-radius: 5px;
     padding: 30px;
     padding-bottom: 45px;
@@ -637,7 +658,7 @@ footer {
     grid-row: 1/2;
     text-align: center;
     font-size: 50px;
-    background: #768c53;
+    background: var(--color-medium-grey);
     width: 100%;
     border: 3px solid black;
     margin-bottom: 150px;
