@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="styles/stales.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo-link" href="index.html" rel="noopener noreferrer">
+                <img src="images/cyber-tree-rsz-removebg-preview.png" alt="logo">
+            </a>
+            <nav class="top-nav">
+                <a class="home-nav" href="index.html" rel="noopener noreferrer">Home</a>
+                <a class="about-me-nav" href="aboutme.html" rel="noopener noreferrer">About Me</a>
+                <a class="projects-nav" href="projects.html" rel="noopener noreferrer">Projects</a>
+            </nav>
+        </header>
+
+        <div id="game-grid">
+            <div id="game-container">
+                <div id="game-output"></div>
+
+                <input type="text" id="game-input" placeholder="Type your choice here..." />
+                <button onclick="submitInput()">Submit</button>
+            </div>
+    
+            <script src="Javascript/game.js"></script>
+        </div>
+
+        <footer>
+            <div class="bottom-container">
+                <nav class="bottom-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html" rel="noopener noreferrer">About Me</a></li>
+                        <li><a href="projects.html" rel="noopener noreferrer">Projects</a></li>
+                    </ul>
+                </nav>
+                <div class="bottom-contact">
+                    <h3>Contact</h3>
+                    <p>Austin Cartwright</p>
+                    <p><a href="mailto:acartwrightwork57@gmail.com" target="_blank" rel="noopener noreferrer">acartwrightwork57@gmail.com</a></p>
+                </div>
+                <div class="social">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin-rsz.png" alt="Linked in">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

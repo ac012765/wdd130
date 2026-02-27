@@ -206,6 +206,7 @@ footer {
 }
 
 .bottom-nav li {
+    color: black;
     text-decoration: none;
     background: white;
     margin: 5px;
@@ -422,6 +423,58 @@ footer {
 
 #project-link {
     color: black;
+}
+
+#adventure-link {
+    color: white;
+}
+
+#adventure-link:hover {
+    color: black;
+    background: var(--color-white);
+    padding: 5px;
+}
+
+#wwr-link:hover {
+    color: black;
+    background: var(--color-white);
+    padding: 5px;
+}
+
+#game-container {
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    background: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    box-shadow: 0 0 15px var(--color-dark);
+}
+
+#game-grid {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    background-color: rgb(228, 228, 228);
+}
+
+#game-output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+
+    white-space: normal;       /* allow wrapping */
+    word-wrap: break-word;     /* break long words if needed */
+}
+
+#game-input {
+    padding: 10px;
 }
 
 .middle {
